@@ -72,10 +72,19 @@
 .orange-color {
   color: rgb(233, 90, 8);
 }
+/* banner section part  */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+main > section {
+  margin-top: 120px;
+}
 .banner-title {
-  font-size: 65px;
+  font-size: 4rem;
   font-weight: 700;
   margin: 0px;
+  display: inline;
 }
 .banner-description {
   font-size: 22px;
@@ -96,11 +105,66 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+/* our plant part style  */
+.our-plant-title {
+  text-align: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.title-style {
+  font-size: 50px;
+  font-weight: 700;
+  /* margin-top: 120px; */
+  margin-bottom: 0;
+}
+/* .plant-subtitle {
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+} */
+
+/* card section part  */
+.card {
+  width: 16.5rem;
+}
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  gap: 20px;
+}
+.card-img {
+  width: 100%;
+}
+.lily {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.usd {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.cart-button {
+  background-color: rgb(233, 90, 8);
+  color: white;
+  /* padding: 26px 50px 26px 50px; */
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Inter;
+  width: 270px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+}
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
   .navbar {
     align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .home,
   .shop,
@@ -113,9 +177,34 @@
 
   .banner-start {
     flex-direction: column-reverse;
-    text-align: center;
   }
   .banner-text {
     margin-top: 28px;
+    text-wrap: none;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .banner-title {
+    display: inline;
+  }
+  .plant-subtitle {
+    padding: 1rem 1.5rem 0rem 1.5rem;
+    text-align: center;
+  }
+  .card-section {
+    grid-template-columns: repeat(2, 4fr);
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-top: 28px;
+  }
+  .card {
+    width: 10.5rem;
+    margin-left: 20px;
+  }
+  .cart-button {
+    width: 10.5rem;
+  }
+  .card-hide {
+    display: none;
   }
 }
